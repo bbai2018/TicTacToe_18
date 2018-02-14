@@ -2,6 +2,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+import java.awt.Font;
 
 public class TicTacToe extends JPanel
 {
@@ -21,6 +22,7 @@ public class TicTacToe extends JPanel
             buttons[i] = new JButton();
             buttons[i].setText("");
             buttons[i].addActionListener(new buttonListener());
+            buttons[i].setFont(new Font("Arial", Font.PLAIN, 40)); //changes font and font size (don't forget to inport Font)
             
             add(buttons[i]); //adds this button to JPanel (note: no need for JPanel.add(...)
                                 //because this whole class is a JPanel already           
